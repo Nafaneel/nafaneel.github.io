@@ -5,10 +5,11 @@
 <body style="background-color: #000000">
 
   <header>
+    <hr color="#141414">
     <br>
-    <center><img onclick="clicked()" src="logo (1).png" style="width:55px;height:50px;"></center>
+    <center><img id="logo" onclick="clicked()" src="logo (1).png" style="width:55px;height:50px;"></center>
     <h2 style="background-color: #fcf400"><i><b>
-          <center>NEXUSSNARL©</center><b></i></h2>
+          <center>NEXUSSNARL</center><b></i></h2>
   </header>
 
 
@@ -17,166 +18,218 @@
     <br>
 
     <h2 style="color: #fcf400">
-      <center><b><i>06/07/21 - 31/03/23</i></b></center>
+      <center><b><i>26/04/21 - 31/03/23</i></b></center>
     </h2>
     <h4 style="color: #ffffff">
-      <center>After 633 Days (1 Year, 8 Months, 25 Days) The Radio Era Is Over</center>
+      <center>After 704 Days (1 year, 11 months and 4 days) The Radio Era Is Over</center>
     </h4>
+    <center>
+      <p style="color: #fff; font-size: 10px">After plea from The Grange School, This site is no longer available</p>
+    </center>
     </h4>
     <div id="menuList" class="menu">
-      <h4>NexusSnarl Links</h4>
+      <h2><b><i>NexusSnarl Links</i></b></h2>
+      <hr color="#fcf003">
+      <h4>TGS Legacy Version</h4>
       <a class="ns-legacy" href="https://nexussnarlx.nafaneel.repl.co/login.html">NexusSnarl Legacy</a><br><br>
-      <a class="ns-x" href="#">NexusSnarl-X</a>
+      <h4>NEW! ➡ NS-X</h4>
+      <a class="ns-x" href="#">NexusSnarl-X</a><br><br>
+
+    </div>
+    <br><br>
+    <hr color="#141414">
+    <center>
+      <p style="color: #fff; font-size: 10px;">COMING SOON</p>
+    </center>
+    <div id="story1" class="story">
+      <br>
+
+
+      <h2>The Final Day</h2>
+      <h3 style="color: #fcf400">31st March 2023</h3>
+
     </div>
   </body>
+</body>
 
-  <style>
-    body,
-    html {
-      height: 100%;
-      margin: 0;
-      font-family: "Arial", "Arial", monospace;
+<style>
+  body,
+  html {
+    height: 100%;
+    margin: 0;
+    font-family: "Arial", "Arial", monospace;
+  }
+
+  .story {
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .menu1 {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(252, 240, 3, 0.9);
+    /* Black w/opacity/see-through */
+    color: black;
+    font-weight: bold;
+
+    position: absolute;
+    border-radius: 5px;
+
+    border-style: solid;
+    border-color: yellow;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 45%;
+    padding: 10px;
+    text-align: center;
+    animation-name: activateOut;
+    animation-duration: 500ms;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+  }
+
+  .menu {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(252, 240, 3, 0.9);
+    /* Black w/opacity/see-through */
+    color: black;
+    font-weight: bold;
+
+    position: absolute;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: yellow;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 45%;
+    padding: 10px;
+    text-align: center;
+    animation-name: activateIn;
+    animation-duration: 500ms;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes activateIn {
+    0% {
+      opacity: 0;
     }
 
-    .menu1 {
-      background-color: rgb(0, 0, 0);
-      /* Fallback color */
-      background-color: rgba(252, 240, 3, 0.4);
-      /* Black w/opacity/see-through */
-      color: white;
-      font-weight: bold;
-
-      position: absolute;
-      border-radius: 5px;
-
-      border-style: solid;
-      border-color: yellow;
-
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 2;
-      width: 45%;
-      padding: 10px;
-      text-align: center;
-      animation-name: activateOut;
-      animation-duration: 500ms;
-      animation-delay: 0s;
-      animation-fill-mode: forwards;
+    100% {
+      opacity: 1;
     }
 
-    .menu {
-      background-color: rgb(0, 0, 0);
-      /* Fallback color */
-      background-color: rgba(252, 240, 3, 0.4);
-      /* Black w/opacity/see-through */
-      color: white;
-      font-weight: bold;
+  }
 
-      position: absolute;
-      border-radius: 5px;
-      border-style: solid;
-      border-color: yellow;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 2;
-      width: 45%;
-      padding: 10px;
-      text-align: center;
-      animation-name: activateIn;
-      animation-duration: 500ms;
-      animation-delay: 0s;
-      animation-fill-mode: forwards;
+  @keyframes activateOut {
+    0% {
+      opacity: 1;
     }
 
-    @keyframes activateIn {
-      0% {
-        opacity: 0;
-      }
-
-      100% {
-        opacity: 1;
-      }
-
+    100% {
+      opacity: 0;
     }
 
-    @keyframes activateOut {
-      0% {
-        opacity: 1;
-      }
+  }
 
-      100% {
-        opacity: 0;
-      }
+  .logo_click {
+    animation-name: logoSpin;
+    animation-duration: 2000ms;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+  }
 
+  @keyframes logoSpin {
+    0% {
+      transform: rotate(0deg);
     }
 
-    a.ns-x {
-      background: linear-gradient(to right, #c1d11d, #a4ab06);
-      background-color: #c1d11d;
-      color: #fff;
-      font-family: Trebuchet MS;
-      font-size: 16px;
-      font-weight: 800;
-      font-style: italic;
-      text-decoration: none;
-      padding: 5px 19px;
-      border: 0px solid #000;
-      border-radius: 4px;
-      display: inline-block;
-      box-shadow: 0px 0px 10px 1px #2D2D2D;
-      text-shadow: 1px 1px 7px #000;
+    100% {
+      transform: rotate(360deg);
     }
 
-    a.ns-x:hover {
-      background: linear-gradient(to right, #c8d655, #afb551);
-      background-color: #c8d655;
-    }
+  }
 
-    a.ns-x:active {
-      transform: scale(0.95);
-    }
+  a.ns-x {
+    background: linear-gradient(to right, #c1d11d, #a4ab06);
+    background-color: #c1d11d;
+    color: #fff;
+    font-family: Trebuchet MS;
+    font-size: 16px;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: none;
+    padding: 5px 19px;
+    border: 0px solid #000;
+    border-radius: 4px;
+    display: inline-block;
+    box-shadow: 0px 0px 10px 1px #2D2D2D;
+    text-shadow: 1px 1px 7px #000;
+  }
 
-    a.ns-legacy {
-      background: linear-gradient(to right, #c5cb88, #b0b195);
-      background-color: #c5cb88;
-      color: #ffffff;
-      font-family: Trebuchet MS;
-      font-size: 16px;
-      font-weight: 800;
-      font-style: italic;
-      text-decoration: none;
-      padding: 5px 19px;
-      border: 0px solid #000;
-      border-radius: 4px;
-      display: inline-block;
-      box-shadow: 0px 0px 10px 1px #2D2D2D;
-      text-shadow: 1px 1px 7px #000;
-    }
+  a.ns-x:hover {
+    background: linear-gradient(to right, #c8d655, #afb551);
+    background-color: #c8d655;
+  }
 
-    a.ns-legacy:hover {
-      background: linear-gradient(to right, #ccd198, #b9baa3);
-      background-color: #ccd198;
-    }
+  a.ns-x:active {
+    transform: scale(0.95);
+  }
 
-    a.ns-legacy:active {
-      transform: scale(0.95);
-    }
-  </style>
+  a.ns-legacy {
+    background: linear-gradient(to right, #c5cb88, #b0b195);
+    background-color: #c5cb88;
+    color: #ffffff;
+    font-family: Trebuchet MS;
+    font-size: 16px;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: none;
+    padding: 5px 19px;
+    border: 0px solid #000;
+    border-radius: 4px;
+    display: inline-block;
+    box-shadow: 0px 0px 10px 1px #2D2D2D;
+    text-shadow: 1px 1px 7px #000;
+  }
 
-  <script>
-    var clicks = 0
+  a.ns-legacy:hover {
+    background: linear-gradient(to right, #ccd198, #b9baa3);
+    background-color: #ccd198;
+  }
 
-    function clicked() {
-      clicks = clicks + 1
-      if (clicks == 5) {
-        showMenu();
-      }
+  a.ns-legacy:active {
+    transform: scale(0.95);
+  }
+</style>
+
+
+
+
+<script>
+  var clicks = 0
+
+  function clicked() {
+    clicks = clicks + 1
+    if (clicks == 5) {
+      showMenu();
     }
-    document.getElementById('menuList').style.visibility = "hidden";
-    function showMenu() {
-      document.getElementById('menuList').style.visibility = "visible";
-      //document.getElementById('menuList').className = "menu1";
-    }
-  </script>
+  }
+  document.getElementById('menuList').style.visibility = "hidden";
+  function showMenu() {
+    setTimeout(function () {document.getElementById('logo').className = "logo_click";}, 1);
+    setTimeout(function () {document.getElementById('menuList').style.visibility = "visible";}, 1100);
+    setTimeout(function () {document.getElementById('menuList').className = "menu1";}, 1050);
+    setTimeout(function () {document.getElementById('menuList').className = "menu";}, 1100);
+    //document.getElementById('menuList').className = "menu1";
+  }
+
+
+</script>
