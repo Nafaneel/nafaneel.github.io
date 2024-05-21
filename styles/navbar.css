@@ -1,0 +1,31 @@
+.navbar {
+    padding-inline: 20px;
+    background-color: rgba(0,0,0,0.9);
+    height: 30px;
+    border: 1px solid gray;
+    
+}
+.navTitle {
+    color: white;
+}
+a {
+    color: white;
+    /*margin-inline: 20px;*/
+    display: inline-block;
+    /*width: 100px;*/
+    padding-inline: 25px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    transition: color 1s;
+    transition: background-color 0.5s;
+    border-radius: 2px;
+} 
+a:hover {
+    background-color: rgba(255,255,255,0.5);
+    
+}
+.linkActive {
+    background-color: rgba(0, 255, 0, 0.5);
+}
