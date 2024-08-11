@@ -10,7 +10,7 @@
     const f = {
       username: "NAF WEB UPDATES",
       avatar_url: "",
-      content: `NEW WEBSITE VISIT: **${b}**`,
+      content: `'NAFANEEL.UK/' VISIT: **${b}**`,
     };
     c.send(JSON.stringify(f));
   }
