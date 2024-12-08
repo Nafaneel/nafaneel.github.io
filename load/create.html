@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URL to URL-Friendly Tag Converter</title>
+</head>
+<body>
+  <h1>URL to URL-Friendly Tag Converter</h1>
+  <label for="inputUrl">Enter URL:</label>
+  <input type="text" id="inputUrl" placeholder="Enter your URL here">
+  <button onclick="convertUrl()">Convert</button>
+  
+  <h2>Converted URL:</h2>
+  <p id="outputUrl"></p>
+  
+  <script>
+    function convertUrl() {
+      // Get the input value
+      const inputUrl = document.getElementById("inputUrl").value;
+
+      if (!inputUrl) {
+        document.getElementById("outputUrl").textContent = "Please enter a valid URL.";
+        return;
+      }
+
+      // Encode the input URL to make it URL-friendly
+      const encodedUrl = encodeURIComponent(inputUrl);
+
+      // Create the new URL-friendly tag
+      const base = "https://website.com/load?url=";
+      const finalUrl = base + encodedUrl;
+
+      // Display the result
+      document.getElementById("outputUrl").textContent = finalUrl;
+    }
+  </script>
+</body>
+</html>

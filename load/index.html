@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>NAFANEEL.UK</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <div>
+            <div class="webInfo">
+                <h1>NAFANEEL.UK</h1>
+                <center>
+                    <div class="spinner"></div>
+                </center>
+                <div class="prompt">WAKING UP SERVICE</div>
+            </div>
+        </div>
+        
+        
+
+
+        <iframe id="checker" src="" onload="onceLoaded()" style="width: 90%; height: 80%;" hidden></iframe>
+
+    </body>
+</html>
+
+<script>
+    
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const url = urlParams.get('url'); 
+
+    setTimeout(function(){
+        document.getElementById("checker").src = url;
+    }, 1000);
+    
+
+    function onceLoaded() {
+        window.location.replace(url);
+    }
+    
+</script>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+    html, body {
+        background-color: rgba(13,13,13,1);
+        color: white;
+        font-family: IBM Plex Sans, Arial, Helvetica, sans-serif;
+        overflow: hidden;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .HeaderBanner {
+        align-items: center;
+    }
+
+    .webInfo {
+        text-align: center;
+        background: transparent;
+    }
+
+    h1 {
+        text-shadow: 0px 0px 10px #666;
+    }
+    .prompt {
+        font-size: 16px;
+        color: #aaa;
+        margin-top: 10px;
+    }
+
+    .spinner {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border-top: 4px solid #999;
+        border-right:  4px solid rgba(0,0,0,0);
+        border-bottom: 4px solid rgba(0,0,0,0);
+        border-left:  4px solid rgba(0,0,0,0);
+        border-radius: 50%;
+
+        animation: spinner 2s forwards infinite;
+
+    }
+    @keyframes spinner {
+        0%{transform: rotate(0deg);}
+        100%{transform: rotate(360deg);}
+    }
+</style>
