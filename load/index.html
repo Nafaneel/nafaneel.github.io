@@ -14,32 +14,25 @@
                 <div class="prompt">WAKING UP SERVICE</div>
             </div>
         </div>
-        
-        
-
-
         <iframe id="checker" src="" onload="onceLoaded()" style="width: 90%; height: 80%;" hidden></iframe>
-
     </body>
+    <script>
+    
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const url = urlParams.get('url'); 
+    
+        setTimeout(function(){
+            document.getElementById("checker").src = url;
+        }, 1000);
+        
+    
+        function onceLoaded() {
+            window.location.replace(url);
+        }
+        
+    </script>
 </html>
 
-<script>
-    
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
-    const url = urlParams.get('url'); 
 
-    setTimeout(function(){
-        document.getElementById("checker").src = url;
-    }, 1000);
-    
 
-    function onceLoaded() {
-        window.location.replace(url);
-    }
-    
-</script>
-
-<style>
-    
-</style>

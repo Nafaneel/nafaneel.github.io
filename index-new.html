@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>NAFANEEL.UK</title>
+        <link rel="icon" type="image/x-icon" href="images/siteLogo.png">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans');
+            html, body {
+                padding: 0px;
+                margin: 0px;
+                font-family: IBM Plex Sans;
+                background-color: #000;
+                overflow: hidden;
+                height: 100%;
+                width: 100%;
+            }
+            .mainContainer{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                height: 100%;
+                width: 100%;
+            }
+            .detailsContainer {
+                color: #eee;
+                text-shadow: 0 0 5px #222;
+            }
+            .bar {
+                border-bottom: 1px solid #222;
+            }
+
+            .pageLinkContainer{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .pageLink {
+                position: relative;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                font-size: 16px;
+                color: #a7a7a7;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+    
+
+            .pageLinkBar {
+                width: 0px;
+                height: 1px;
+                background-color: gray;
+                transition: all 0.3s ease;
+            }
+
+            /*ON HOVER*/
+            .pageLinkContainer:hover .pageLinkBar {
+                width: 90px; 
+            } 
+            .pageLinkContainer:hover .pageLink {
+                color: #ffffff;
+            } 
+            /*ON CLICK*/
+            .pageLinkContainer:active .pageLinkBar {
+                width: 90px;
+                background-color: rgba(21, 145, 21, 0.541);
+            } 
+            .pageLinkContainer:active .pageLink {
+                color: #939e80;
+            } 
+
+            .socialsContainer{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            .socialsButton {
+                height: 40px;
+                width: 40px;
+                cursor: pointer;
+            }
+            .socialsButtonImage {
+                height: 40px;
+                width: 40px;
+                filter: invert(100%);
+                opacity: 0.6;
+                transition: all 0.3s ease;
+            }
+            .socialsButtonImage:hover {
+                opacity: 1;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="mainContainer">
+            <div class="detailsContainer">
+                <h1>NAFANEEL.UK</h1>
+                <div class="bar"></div>
+                <p style="font-size: 10px; color: #a7a7a7;">2025 TEMPORARY LANDING PAGE</p>
+                <br>
+                <div class="linksContainer">
+                    <div class="pageLinkContainer" onclick="">
+                        <div class="pageLink">ABOUT</div>
+                        <div class="pageLinkBar"></div>
+                    </div>
+                    <div class="pageLinkContainer" onclick="">
+                        <div class="pageLink">PROJECTS</div>
+                        <div class="pageLinkBar"></div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="socialsContainer">
+                    <div class="socialsButton">
+                        <img src="https://cdn-icons-png.flaticon.com/128/61/61109.png" class="socialsButtonImage">
+                    </div>
+                    <div class="socialsButton">
+                        <img src="https://cdn-icons-png.flaticon.com/128/5968/5968866.png" class="socialsButtonImage">
+                    </div>
+                    <div class="socialsButton">
+                        <img src="https://cdn-icons-png.flaticon.com/128/5968/5968759.png" class="socialsButtonImage">
+                    </div>
+                </div>
+                
+                
+                <br>
+                <p style="font-size: 10px; color: #a7a7a7;">© NAFANEEL.UK 2020 - 2025</p>
+            </div>
+        </div>
+    </body>
+</html>
