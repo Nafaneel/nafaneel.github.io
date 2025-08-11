@@ -1,4 +1,4 @@
-var proceedNormalLoad = true
+var proceedNormalLoad = false;
 
 //make relivant checks
 if(proceedNormalLoad){
