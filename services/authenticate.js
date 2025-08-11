@@ -1,8 +1,1 @@
-var proceedNormalLoad = false;
-
-//make relivant checks
-if(proceedNormalLoad){
-    document.getElementById("mainContentJSload").style.visibility = "visible";
-} else {
-    document.write("This Website Is No Longer Maintained And Hosted.")
-}
+var proceedNormalLoad = false; if(proceedNormalLoad){document.getElementById("mainContentJSload").style.visibility = "visible";} else {document.getElementById("mainContentJSload").style.visibility = "visible"; document.head.innerHTML = ``; document.body.innerHTML = `<p style="color: black;">This Website Is No Longer Hosted & Maintained.</p>`;}
