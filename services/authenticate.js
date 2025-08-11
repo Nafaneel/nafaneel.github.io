@@ -4,5 +4,5 @@ var proceedNormalLoad = false;
 if(proceedNormalLoad){
     document.getElementById("mainContentJSload").style.visibility = "visible";
 } else {
-    document.write("This Website Is No Longer Valid, Please contact system administrator.")
+    document.write("This Website Is No Longer Maintained And Hosted.")
 }
